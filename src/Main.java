@@ -8,6 +8,9 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
+        task9();
+        task10();
     }
 
     public static void task1() {
@@ -48,14 +51,44 @@ public class Main {
 
     public static void task6() {
         System.out.println("задача 6");
-        for (int i = 7; i <= 98; i = i + 7){
+        for (int i = 7; i <= 98; i = i + 7) {
             System.out.println("итерация" + i);
+        }
+
     }
 
-}
     public static void task7() {
         System.out.println("задача 7");
-        for (int i = 1; i <= 512; i = i * 2)
+        for (int i = 1; i <= 512; i = i * 2) {
             System.out.println("итерция" + i);
+        }
     }
+
+    public static void task8() {
+        System.out.println("задача 8");
+        int salary = 29_000;
+        int total = 0;
+        for (int i = 1; i <= 12; i = i + 1) {
+            total = total + salary;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
+    }
+
+    public static void task9() {
+        System.out.println("задача 9");
+        int salary = 29_000;
+        int total = 0;
+        for (int i = 1; i <= 12; i = i + 1) {
+            total = total + total / 100;
+            total = total + salary;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
+    }
+
+    public static void task10() {
+        System.out.println("задача 10");
+        int number=2;
+        for (int i = 1; i <= 10; i = i + 1) System.out.println(number + "*" + i + "="+number*i);
+    }
+
 }
