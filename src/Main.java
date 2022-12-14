@@ -15,14 +15,14 @@ public class Main {
 
     public static void task1() {
         System.out.println("задача 1");
-        for (int i = 0; i <= 10; i = i + 1) {
+        for (int i = 0; i <= 10; i++) {
             System.out.println("итерация" + i);
         }
     }
 
     public static void task2() {
         System.out.println("задача 2");
-        for (int i = 10; i >= 1; i = i - 1) {
+        for (int i = 10; i >= 1; i--) {
             System.out.println("итерация" + i);
 
         }
@@ -45,6 +45,7 @@ public class Main {
     public static void task5() {
         System.out.println("задача 5");
         for (int i = 1904; i <= 2096; i = i + 4) {
+            if ((i%4==0)&&(i%100!=0)||i%400==0)
             System.out.println(i + " год является високостным");
         }
     }
@@ -68,7 +69,7 @@ public class Main {
         System.out.println("задача 8");
         int salary = 29_000;
         int total = 0;
-        for (int i = 1; i <= 12; i = i + 1) {
+        for (int i = 1; i <= 12; i++) {
             total = total + salary;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
@@ -78,7 +79,7 @@ public class Main {
         System.out.println("задача 9");
         int salary = 29_000;
         int total = 0;
-        for (int i = 1; i <= 12; i = i + 1) {
+        for (int i = 1; i <= 12; i++) {
             total = total + total / 100;
             total = total + salary;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
@@ -88,7 +89,8 @@ public class Main {
     public static void task10() {
         System.out.println("задача 10");
         int number=2;
-        for (int i = 1; i <= 10; i = i + 1) System.out.println(number + "*" + i + "="+number*i);
+        for (int i = 1; i <= 10; i++)
+            System.out.println("2*"+i+"="+2*i);
     }
 
 }
